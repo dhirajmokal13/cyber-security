@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* nav menu and others start*/
+
+.sidenav {
+  overflow: hidden;
+  top: 0;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 880px;
+  left: 0;
+  background-color: rgb(8, 8, 8, 0.5);
+  border-radius: 0 0 35% 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 4px 6px 25px rgb(238 114 98), 3px 4px 5px rgb(243 55 49);
+}
+
+.sidenav a.parts {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f1e7e7;
+  display: block;
+  width: 100%;
+  /* background-color: rgb(40, 141, 207); */
+  background: linear-gradient(45deg, rgb(11, 132, 245), transparent);
+  border-top: 1px solid #fff;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #f3e5e5;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a.parts:hover, a.parts:focus, a.parts.active {
+  color: #eedfdf;
+  background-color: rgb(57, 243, 243);
+}
+
+.sidenav a:hover {
+  color: #fd362f;
+  background-color: transparent;
+}
+
+.sidenav .closebtnn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: transparent;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+span.side-nav {
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 20px;
+  background-color: #6b6b6b;
+  ;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+}
+
+.mySidenav {
+  border-radius: 5px;
+}
+
+/* accordtination bar */
+
+.accordion {
+  /* background: linear-gradient(45deg, #f5eded, #7ef3cc); */
+  background-color: rgb(236, 223, 223);
+  color: #444;
+  cursor: pointer;
+  padding: 10px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  border-top: 1px solid rgb(149, 35, 35);
+}
+
+.accordition.active, .accordion:hover {
+  background-color: rgb(200, 197, 197);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  background-color: rgb(158, 147, 147);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+}
+
+/* nav menu and others end*/
+
+footer {
+  position: relative;
+  /* top: 565px; */
+  bottom: 0;
+  width: 100%;
+  height: 1.3cm;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h4.footer {
+  padding: 4px 25px 5px 25px;
+}
+
+body {
+  font-family: 'Times New Roman', 'Times', 'serif';
+  background-image: url('image/contact-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* div main start here  */
+
+#main {
+  position: unset;
+  top: 70px;
+  margin: 6% 40px 2% 40px;
+  min-width: 94%;
+  background-color: rgb(250, 233, 233, 0.4);
+  /* z-index: -1; */
+  border-radius: 7px;
+  padding: 10px 5px 38px 5px;
+  min-height: 729px;
+}
+
+#main .heading {
+  padding: 10px 20% 0 20%;
+  font-size: 40px;
+  font-family: monospace;
+  color: rgb(184, 56, 24);
+}
+
+#main p {
+  font-size: 23px;
+  color: #2b426a;
+  padding: 6px 20px 6px 40px;
+  display: block;
+  overflow-wrap: break-word;
+  font-family: Lucidatypewriter;
+}
+
+#main .pt {
+  font-size: 28px;
+  padding: 12px 20px 7px 20px;
+  margin-top: 10px;
+  color: green;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+#main .type {
+  color: rgb(233, 37, 70);
+  font-size: 26px;
+  display: inline-block;
+  padding: 10px 20px 3px 28px;
+}
+
+#main .point {
+  font-size: 24px;
+  color: #2737c3;
+  padding: 6px 20px 6px 37px;
+  display: block;
+  font-family: Lucidatypewriter;
+}
+
+/* table start here */
+
+#main table {
+  background-color: #ffffff;
+  margin: 30px 90px;
+  width: 55%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border: none;
+  border-collapse: collapse;
+  padding-bottom: 30px;
+  /* display: table-row-group; */
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+#main table th {
+  background-color: #75eed4c2;
+  /* padding-top: 20px; */
+  /* padding-bottom: 16px; */
+  padding: 20px 10px 16px 10px;
+  font-size: 24px;
+  word-spacing: 10px;
+  letter-spacing: 2.5px;
+}
+
+#main table td {
+  padding: 10px 50px;
+ 
+  font-size: 20px;
+}
+
+#main tr:nth-child(even) {
+  background-color: #acf6706c;
+}
+
+/* table end here */
+
+/* div main end here  */

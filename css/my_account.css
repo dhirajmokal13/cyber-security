@@ -1,0 +1,273 @@
+h4.user {
+  border-top: 1px solid #8a8989;
+  font-size: 18px;
+  padding: 5px 5px 5px 8px;
+  font-family: arial;
+}
+
+.user:hover {
+  background-color: #d8d3d3;
+  cursor: pointer;
+}
+
+span.user-symbol {
+  color: #02025f;
+  margin: 0 6px 0 0;
+  font-size: 22px;
+}
+
+h4.logout {
+  font-size: 25px;
+  padding: 12px 10px;
+  border: 1px solid red;
+  text-align: center;
+  background-image: linear-gradient(to right, #039703, #51f151, #039703);
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.logout a {
+  color: red;
+}
+
+.logout a:active {
+  color: #f83030;
+}
+
+.logout a:hover {
+  background-color: #51f151;
+}
+
+h1.head-my-account {
+  font-size: 30px;
+  color: green;
+  font-family: arial;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+span.copyright-symbol {
+  height: 20px;
+  width: auto;
+  font-size: 27px;
+  padding-right: 15px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+nav {
+  /* background: #b4b4b4; */
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* opacity :0.9; */
+  /* overflow; */
+  background: rgb(180, 180, 180, 0.6);
+}
+
+label.logo {
+  color: #000000;
+  font-size: 40px;
+  line-height: 58px;
+  padding: 0 20px;
+  font-family: fantasy;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  background: #787878;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:focus-within .dropbtn {
+  visibility: visible;
+  opacity: 1;
+  background-color: #787878;
+  ;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(220 212 212);
+  /*border-bottom:2px solid black;
+    color:blue;*/
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+ #id01 .modal-content{
+    width: 95%;
+  }
+}

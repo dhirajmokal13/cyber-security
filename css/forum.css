@@ -1,0 +1,504 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', 'Times', 'serif';
+    background-image: url('image/forum-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    word-spacing: 4px;
+}
+
+div.some {
+    display: flex;
+    font-family: arial;
+}
+
+h4.update, h4.delete, h4.certificate {
+    display: inline-flex;
+    padding: 6px 8px;
+    background-color: #a23b3b;
+    margin: 4px 10px;
+    border-radius: 5px;
+}
+
+h4.update:hover, h4.delete:hover, h4.certificate:hover, h4.update:focus, h4.delete:focus, h4.certificate:focus {
+    background-color: red;
+}
+
+a.update, a.certificate, a.delete {
+    background-color: transparent;
+    color: white;
+}
+
+/* delete update and certificate end here */
+
+/* message show start */
+
+div.alert {
+    background-color: rgba(0, 145, 0, 0.2);
+    color: rgb(14, 34, 14);
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid green;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+}
+
+div.Error {
+    background-color: rgb(248, 27, 27, 0.2);
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid red;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+}
+
+strong.error {
+    color: red;
+}
+
+strong.success {
+    color: green;
+}
+
+/* message show end */
+
+/* footer start here */
+
+footer {
+    position: relative;
+    top: 220px;
+    bottom: 0;
+    width: 100%;
+    height: 1.3cm;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h4.footer {
+    padding: 8px 10px 5px 15px;
+}
+
+/* footer end here */
+
+#forum {
+    position: relative;
+    top: 108px;
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+    /* justify-content: center; */
+    background-color: rgba(96, 223, 11, 0.5);
+    padding: 15px 20px;
+    border-radius: 10px;
+    /* z-index: 1; */
+    letter-spacing: 1.3px;
+    box-shadow: 0 0 45px rgb(238 114 98), 0 0 25px rgb(243 55 49);
+}
+
+h2.head1 {
+    display: block;
+    /* justify-content: center; */
+    font-size: 40px;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    color: #d3200f
+}
+
+div.postp {
+    display: block;
+    /* justify-content: center; */
+}
+
+#forum label {
+    font-size: 30px;
+    margin: 10px 0;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    color: #5009c1;
+    font-weight: bold;
+}
+
+#forum .center {
+    display: block;
+    margin: 0 auto;
+}
+
+#forum input {
+    padding: 7px 20px;
+    width: 50%;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+    border: 1px solid #13a106;
+}
+
+#forum .postcomment {
+    border-radius: 10px;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border: 1px solid #13a106;
+    resize: none;
+}
+
+#forum button {
+    padding: 8px 25px;
+    font-size: 16px;
+    top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #13a106;
+    background-color: #13a106;
+    color: white;
+    cursor: pointer;
+}
+
+#forum button:focus, input:focus, .postcomment:focus {
+    box-shadow: 0 0 25px rgb(240, 163, 19), 0 0 5px rgb(226, 6, 6);
+}
+
+#forumcon {
+    display: block;
+    position: relative;
+    top: 188px;
+    bottom: 10px;
+    /* background-color: rgba(97, 52, 206, 0.4); */
+    background-color: rgba(143, 220, 160, 0.4);
+    padding: 18px 20px;
+    max-width: 75%;
+    margin: 10px auto 45px auto;
+    border-radius: 10px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 45px rgb(238 114 98), 0 0 25px rgb(243 55 49);
+}
+
+#forumcon img.avtar {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+}
+
+#forumcon img.deleteicon {
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+#forumcon img.deleteicon:hover {
+    color: red;
+    /* -webkit-filter: invert(100%); */
+    /* mix-blend-mode: difference; */
+}
+
+#forumcon div.name {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 3px 0;
+    vertical-align: middle;
+    z-index: 1;
+    /* font-family: arial; */
+}
+
+#forumcon div.timestamp {
+    display: inline-block;
+    color: #cc2d18;
+    font-size: 21px;
+    vertical-align: middle;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+#forumcon div.sub {
+    display: block;
+    font-size: 19px;
+    margin: 4px 0;
+    font-weight: bold;
+    color: #a23b3b;
+    z-index: 1;
+    overflow-wrap: break-word;
+}
+
+#forumcon span.message {
+    display: block;
+    font-size: 17px;
+    margin: 3px 0 16px 0;
+    color: #1c7913;
+    z-index: 1;
+    overflow-wrap: break-word;
+}
+
+#forumcon span.active {
+    color: #40b113;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+#forumcon a.discussion-page,span.like {
+    background-color: #92f395;
+    border: 1px solid black;
+    padding: 6px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    color: #131010;
+    font-weight: bold;
+    transition: 0.6s;
+    cursor: pointer;
+}
+#forumcon span.liked {
+    background-image: linear-gradient(to left, red, black, rgb(19, 19, 124));
+    border: 1px solid green;
+    padding: 6px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    color: #eaf1e9;
+    font-weight: bold;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#forumcon span.liked span.likk::after {
+    content: "d";
+}
+#forumcon a.discussion-page:hover {
+    color: #eaf1e9;
+    border: 1px solid green;
+    /*background-color: #229620;*/
+    background-image: linear-gradient(to left, red, black, rgb(19, 19, 124));
+}
+
+#forumcon a.discussion-page:focus {
+    background-image: linear-gradient(to right, red, black);
+    color: #eaf1e9;
+}
+
+#sub {
+    position: relative;
+    top: 100px;
+    min-height: 652px;
+}
+
+/* discussion start here */
+
+#sub .discussion {
+    background-color: rgba(112, 140, 68, 0.3);
+    border-radius: 1vw;
+    padding: 1vh 1vw;
+    margin: 3vh 2rem;
+    max-width: 50%;
+    position: relative;
+    color: #6b0808;
+}
+
+#sub .discussion2 {
+    /* background-color:rgb(40, 196, 40, 0.3);  */
+    margin-left: 48vw;
+    border-radius: 1vw;
+    padding: 1vh 1vw;
+    position: relative;
+    max-width: 50%;
+}
+
+.discussion2 span.active {
+    color: #13a106;
+    font-size: 1.2rem;
+}
+
+.discussion div.first {
+    font-size: 1.6rem;
+}
+
+.discussion span.name, span.posttime {
+    color: rgb(158, 134, 47);
+    vertical-align: middle;
+    font-weight: cursive;
+}
+
+.discussion img {
+    height: 2rem;
+    /* width: 1.8rem; */
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.discussion .second {
+    font-size: 1.3rem;
+    margin-left: 41px;
+    overflow-wrap: break-word;
+}
+
+div.discussion span.notdis {
+    color: rgb(216, 25, 25);
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    font-family: monospace;
+}
+
+/* discussion end here */
+
+#postt {
+    background-color: rgba(141, 140, 135, 0.3);
+    border-radius: 1rem;
+    padding: 24px 31px;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+#postt .dpoint {
+    font-size: 2.7vw;
+    vertical-align: middle;
+    overflow-wrap: break-word;
+}
+
+#postt img.queavtar {
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+#postt div.mid {
+    color: rgb(153, 149, 149);
+    font-size: 1.4vw;
+    margin: 5px 0;
+}
+
+#postt span.heighlight {
+    color: rgb(19, 197, 28);
+    margin: 0 4px;
+}
+
+#postt .message {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    font-family: fangsong;
+    margin: 8px 0 5px 0;
+    overflow-wrap: break-word;
+}
+
+div.discform {
+    display: flex;
+    justify-content: center;
+}
+
+#discussionn {
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    display: block;
+    margin: 1rem 1rem;
+    background-color: rgba(228, 236, 231, 0.8);
+    font-size: 1rem;
+    color: rgb(78, 8, 8);
+    outline: none;
+    resize: none;
+}
+
+.discform button {
+    margin: 0 auto;
+    padding: 0.4rem 1.3rem;
+    display: block;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    outline: none;
+    background-color: #84d646;
+}
+
+div.dispoint {
+    font-size: 3rem;
+    margin: 3rem 37vw 1.8rem 37vw;
+    font-family: sans-serif;
+}
+
+/* pegination start here */
+
+.pagination {
+    display: inline-block;
+    position: relative;
+    /*top: 180px; */
+    bottom: -180px;
+    clear: both;
+    margin: 0 12.4%;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* pegination end here */
+
+#sort {
+    display: block;
+    position: relative;
+    top: 163px;
+    margin: 0 auto;
+    width: 74%;
+    padding: 1vh;
+    background-color: rgba(141, 140, 135, 0.3);
+    border-radius: 6px;
+}
+#sort h2 {
+    display: inline;
+    margin: 0 1vh;
+    font-family: Arial;
+}
+
+#sorts {
+    width: 59%;
+    display: unset;
+    border-radius: 3px;
+    float: right;
+}
+
+#sorting {
+    padding: 3px 6px;
+    font-size: 1.7vh;
+    display: inline-block;
+    position: relative;
+    left: 73%;
+}
+
+#sorting option {
+    padding: 4px 6px;
+    font-size: 1.7vh;
+}
