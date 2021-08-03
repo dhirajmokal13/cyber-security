@@ -27,7 +27,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             window.history.replaceState(null, null, window.location.href);
         }
     </script>
-    <script src="script/jquery-3.6.0.min"></script>
+    <script src="script/jquery.min.js"></script>
     <title>Forum</title>
 </head>
 
