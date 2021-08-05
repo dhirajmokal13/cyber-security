@@ -1,5 +1,6 @@
 {
     "name": "dhiraj/cyber",
+    "type": "project",
     "description": "teach about cyber security
 and ethical hacking",
     "license": "MIT",
