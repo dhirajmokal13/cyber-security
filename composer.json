@@ -2,4 +2,7 @@
     "require": {
         "ext-gd": "*"
     }
+    "autoload": {
+        "psr-4": {"Acme\\": "src/"}
+    }
 }
