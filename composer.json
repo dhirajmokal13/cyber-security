@@ -1,7 +1,7 @@
 {
     "name": "dhiraj/cyber",
     "description": "project",
-    "type": "ext-gd",
+    "type": "project",
     "require": {
         "ext-gd": "*"
     },
