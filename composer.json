@@ -1,17 +1,15 @@
 {
     "name": "dhiraj/cyber",
-    "type": "project",
-    "description": "teach about cyber security
-and ethical hacking",
+    "description": "project",
+    "type": "ext-gd",
+    "require": {
+        "ext-gd": "ext-gd:*"
+    },
     "license": "MIT",
     "authors": [
         {
             "name": "Dhiraj Mokal",
             "email": "dhirajmokal13@gmail.com"
         }
-    ],
-    "require": {
-         "php": "^7.1.3 || ^8.0",
-        "ext-gd": "*"
-    }
+    ]
 }
