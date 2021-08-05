@@ -3,7 +3,7 @@
     "description": "project",
     "type": "ext-gd",
     "require": {
-        "ext-gd": "ext-gd:*"
+        "ext-gd": "*"
     },
     "license": "MIT",
     "authors": [
