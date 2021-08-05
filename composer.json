@@ -1,15 +1,15 @@
 {
     "name": "dhiraj/cyber",
-    "description": "project",
-    "type": "project",
-    "require": {
-        "ext-gd": "*"
-    },
+    "description": "cyber security and ethical h
+acking",
     "license": "MIT",
     "authors": [
         {
             "name": "Dhiraj Mokal",
             "email": "dhirajmokal13@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "ext-gd": "*"
+    }
 }
