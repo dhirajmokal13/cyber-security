@@ -1,0 +1,24 @@
+{
+    "_readme": [
+        "This file locks the dependencies of you
+r project to a known state",
+        "Read more about it at https://getcompos
+er.org/doc/01-basic-usage.md#installing-dependen
+cies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "89aa8af198e5b60821277a0ec29
+a184a",
+    "packages": [],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-gd": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
