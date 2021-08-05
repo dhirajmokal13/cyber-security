@@ -2,12 +2,6 @@
     "name": "dhirajmokal/cybersecurity",
     "description": "cyber security information a
 nd ethical hacking",
-    "autoload": {
-        "psr-4": {
-            "Dhirajmokal\\Cybersecurity\\": "src
-/"
-        }
-    },
     "authors": [
         {
             "name": "Dhiraj Mokal",
