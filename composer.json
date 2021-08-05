@@ -1,7 +1,8 @@
 {
-    "name": "dhirajmokal/cybersecurity",
-    "description": "cyber security information a
-nd ethical hacking",
+    "name": "dhiraj/cyber",
+    "description": "teach about cyber security
+and ethical hacking",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dhiraj Mokal",
