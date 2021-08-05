@@ -1,0 +1,21 @@
+{
+    "name": "dhirajmokal/cybersecurity",
+    "description": "cyber security information a
+nd ethical hacking",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dhirajmokal\\Cybersecurity\\": "src
+/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dhiraj Mokal",
+            "email": "dhirajmokal13@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-gd": "*"
+    }
+}
