@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password1 = $_POST['password1'];
     $ip = $_SERVER['REMOTE_ADDR'];
 
-    $sql = "select * from registration where username1='$username1' AND password1='$password1'";
+    $sql = "select * from registration where username1='$username1' AND binary password1='$password1'";
     $result = mysqli_query($conn, $sql);
     //$row = array();
     $num = mysqli_num_rows($result);
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
     } else {
-        $sql2 = "select * from admin where username='$username1' AND password='$password1'";
+        $sql2 = "select * from admin where username='$username1' AND binary password='$password1'";
         $result2 = mysqli_query($conn, $sql2);
         $num2 = mysqli_num_rows($result2);
         if ($num2 == 1) {
