@@ -15,7 +15,7 @@ echo '<!-- Footer --> <hr class="mt-5">
         <h6 class="text-uppercase font-weight-bold">Cyber Security And Ethical Hacking</h6>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>In our website we make people aware about the cybercrime in present situation.
-        and we tech people about Ethical hacking</p>
+        and we teach people about Ethical hacking</p>
 
       </div>
       <!-- Grid column -->
